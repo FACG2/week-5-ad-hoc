@@ -1,0 +1,27 @@
+{
+  "name": "week-5-ad-hoc-",
+  "version": "1.0.0",
+  "description": "ad-hoc week 5 project",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACG2/week-5-ad-hoc-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACG2/week-5-ad-hoc-/issues"
+  },
+  "homepage": "https://github.com/FACG2/week-5-ad-hoc-#readme",
+  "devDependencies": {
+    "request": "^2.81.0",
+    "shot": "^3.4.2",
+    "tape": "^4.8.0"
+  }
+}
