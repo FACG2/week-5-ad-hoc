@@ -17,6 +17,7 @@ shot.inject(router, { method:'get' , url: '/qqqqq'}, (res) => {
   t.equal(res.payload, 'Page Not Found', 'should return error in the payload');
   t.end();
 });
+});
 
 test('Public route', (t) => {
   shot.inject(router, {method:'get' , url:'/public'}, (res) => {
@@ -52,4 +53,3 @@ test('Public js request file', (t) => {
     t.end();
   })
 });
-
