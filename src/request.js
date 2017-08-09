@@ -25,19 +25,41 @@ request(url,(err , res , body)=>{
 })
 }
 
-getQoute((err ,res ,data)=>{
-    console.log(data);
-  // var cdata=data.substring(2,data.length-1);
-  // console.log(JSON.parse(cdata));
-  // var data2 = JSON.parse(cdata);
-  // console.log(data2.quoteText);
-});
-//  var arr =getQoute(() => {
-//    if(null){
-//      console.log('error');
-//    }
-//    else
+const getAudio = (qout,cb)=>{
+  var reblacedQoute = encodeURIComponent(qout.trim())
+  var url = `http://api.voicerss.org/?key=a745846b75b144ef91c60d4de16d0f0d&hl=en-us&src=${reblacedQoute}&c=MP3`;
+  _request(url , (err , res , body)=>{
+    if(err)
+    cb(err)
+    else {
+      cb(null, res, body);
+    }
+  })
+}
+
+const generateAvatar = (size, query , cb) =>{
+  var replacedquery = encodeURIComponent(query.trim())
+  var url = `https://api.adorable.io/avatars/${size}/${replacedquery}.png`;
+  _request(url, (err,res,body)=>{
+    if(err)
+    cb(err)
+    else {
+      cb(null,res,body)
+    }
+  })
+}
+
+// getQoute((err ,res ,data)=>{
+//     console.log(data);
+// });
+// getAudio(q ,(err, res , data)=>{
+//   console.log(data);
+// });
+generateAvatar(164,'qamar f',(err, res, data)=>{
+  console.log(res);
+})
 
 module.exports ={
-   getQoute:getQoute
+   getQoute:getQoute,
+   getAudio:getAudio
 }
