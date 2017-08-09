@@ -16,7 +16,6 @@ shot.inject(router, { method:'get' , url: '/qqqqq'}, (res) => {
   t.equal(res.statusCode, 404 , 'respond with 404');
   t.equal(res.payload, 'Page Not Found', 'should return error in the payload');
   t.end();
-})
 });
 
 test('Public route', (t) => {
@@ -53,3 +52,4 @@ test('Public js request file', (t) => {
     t.end();
   })
 });
+
