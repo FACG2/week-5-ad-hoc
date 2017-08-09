@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/FACG2/week-5-ad-hoc#readme",
   "devDependencies": {
-    "atob": "^2.0.3",
     "istanbul": "^0.4.5",
     "shot": "^3.4.2",
     "tap-spec": "^4.1.1",
