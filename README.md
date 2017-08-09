@@ -50,7 +50,11 @@ as a user
 - Add styling and DOM manipulation to display data
 - Set up Heroku
 
+### System Structure
+![pic](https://github.com/FACG2/week-5-ad-hoc/blob/master/public/img/structure.png?raw=true)
 
+### Sequence Diagram
+![pic2](https://github.com/FACG2/week-5-ad-hoc/blob/master/public/img/sequance.png?raw=true)
 
 ### Heroku
 
