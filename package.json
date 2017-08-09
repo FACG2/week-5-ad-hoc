@@ -27,6 +27,7 @@
     "tape": "^4.8.0"
   },
   "dependencies": {
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "atob": "^2.0.3"
   }
 }
