@@ -1,8 +1,12 @@
 # week-5-ad-hoc
-ad-hoc week 5 project
+Our website can give you a best qoute, and funny photo for the author
 
 ### User story
-as a user
+> As a user
+- When I click on refresh button I should get a Random Qoute.
+- When click on "Read Qoute" Button I should hear the speech of the Qoute.
+- When I click on "Tweet" Button I can share the Qoute on tweeter.
+
 
 
 ### Specification
@@ -19,11 +23,6 @@ as a user
 - [x] Use CodeCov or a similar tool for test coverage.
 - [x] Display continuous integration and code coverage badges on your project README.
 - [x] Ensure that errors are handled, if for example a user attempts to make a request to a non-existent route to your server, provide the user with a custom response.
-
-
-
-## Stretch Goal
-
 
 
 
@@ -50,11 +49,12 @@ as a user
 - Add styling and DOM manipulation to display data
 - Set up Heroku
 
+
 ### System Structure
-![pic](https://github.com/FACG2/week-5-ad-hoc/blob/master/public/img/structure.png?raw=true)
+![pic](https://raw.githubusercontent.com/FACG2/week-5-ad-hoc/last-varsion/public/img/structure.png)
 
 ### Sequence Diagram
-![pic2](https://github.com/FACG2/week-5-ad-hoc/blob/master/public/img/sequance.png?raw=true)
+![pic2](https://raw.githubusercontent.com/FACG2/week-5-ad-hoc/last-varsion/public/img/sequance.png)
 
 ### Heroku
 
@@ -72,7 +72,8 @@ Things to remember for next time!
   }
 ```
 
-
+### [Elias](http://github.com/eliascodes) Avatar
+![elias photo](http://api.adorable.io/avatar/200/elias)
 
 ### Installation instructions
 
@@ -87,3 +88,22 @@ Things to remember for next time!
  - Run `npm test` to start testing
 
  - Navigate to http://localhost:4000/ in your browser
+
+
+### Team:
+
+* [Sohad](http://github.com/Sohadwd)<br>
+
+![Sohad](http://api.adorable.io/avatar/128/sohad)
+
+* [Qamer](http://github.com/Qamar-93)<br>
+
+![Qamer](http://api.adorable.io/avatar/128/qamer)
+
+* [Eslam](http://github.com/Eslam3bed)<br>
+
+![Eslam](http://api.adorable.io/avatar/128/eslam)
+
+* [Mahmoud](http://github.com/mrm7moud)<br>
+
+![Mahmoud](http://api.adorable.io/avatar/128/mahmoud)
