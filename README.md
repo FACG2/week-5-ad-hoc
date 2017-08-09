@@ -90,6 +90,8 @@ Things to remember for next time!
  - Navigate to http://localhost:4000/ in your browser
 
 
+##  link to Heroku [visit](https://ad-hocc.herokuapp.com)
+
 ### Team:
 
 * [Sohad](http://github.com/Sohadwd)<br>
