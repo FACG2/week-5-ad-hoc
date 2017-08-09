@@ -1,25 +1,21 @@
-const fs = require('fs')
-const home = require('./handler').home
-const allFiles = require('./handler').allFiles
+const handlers=require('./handlers')
 
-var handlers = require('./handler.js')
 
-function router(req, res) {
 
-const url = req.url;
-
-var handle = {
-  '/': 'index.html',
-  '/public' : 'index.html',
-  '/api/getQoute' : 'getQoute',
-  '/api/getAudio' : 'getAudio'
-}[url];
-
-if (handle){
-  home(res, handle);
-}else {
-  allFiles(res, url);
+const router=(req ,res)=>{
+  let url= req.url;
+  const handle={
+    '/':handlers.home,
+    '/api/getQoute':handlers.getQoute,
+    '/api/getAudio':handlers.getAudio,
+  }[url];
+  if(handle)
+    handle(req ,res);
+  else if(url.startsWith('/public')){
+    handlers.Public(req ,res)
+  }else{
+    handlers.notFound(req ,res);
+}
 }
 
-}
-module.exports = router
+module.exports = router;

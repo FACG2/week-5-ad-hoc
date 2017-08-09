@@ -2,26 +2,13 @@
 //getQoute()
 //getAudio
 //_request(url, pringData)
-//samples of expected data
-let qouteData={
-  quoteText: "Fame usually comes to those who are thinking about something else. ",
-  quoteAuthor: "Holmes",
-  senderName: "",
-  senderLink: "",
-  quoteLink: "http://forismatic.com/en/ef7413d4dc/"
-};
-let audioData={
-  mp3Url:'http://www.noiseaddicts.com/samples_1w72b820/95.mp3',
-};
-
-
 const getQoute=(func)=>{
   let url='./api/getQoute'
   _request(url ,(err ,data)=>{
     if(false)
       func(err)
-    else
-      func(null , data || qouteData)
+    else{
+      func(null , JSON.parse(data))}
   })
 }
 const getAudio=(text ,func)=>{
@@ -30,14 +17,14 @@ const getAudio=(text ,func)=>{
     if(false)
       func(err)
     else
-      func(null , data  || audioData)
+      func(null , data)
   })
 }
 const _request=(url ,pringData)=>{
   const xhr= new XMLHttpRequest();
   xhr.onreadystatechange =()=>{
       if (xhr.readyState == 4 && xhr.status == 200) {
-        var data = JSON.parse(xhr.responseText)
+        var data =xhr.responseText;
         pringData(null ,data);
       }else {
         pringData(xhr.status);

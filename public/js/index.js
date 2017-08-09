@@ -34,14 +34,21 @@
   document.getElementById('playAudio').addEventListener('click', (event) => {
     //make request for audio for the text
     //play the sound
-    let text=' d';
+    let text=document.getElementById('qoute').value;
     getAudio(text, (err, data) => {
       if (err)
         alertUser(err, 'audio btn')
       else {
-        let mp3Link = data.link;
-        let audio = new Audio(data.mp3Url);
+        // let mp3Link = data.link;
+
+        console.log(data);
+        // var bin = atob(data);
+        let audio=new Audio(data);
+        // audio =bin;
         audio.play();
+        // let audio = new Audio(data.mp3Url);
+        // audio.play();
+
       }
     })
   })
@@ -73,7 +80,10 @@
     let author = document.getElementById('auth')
     let qoute = document.getElementById('qoute')
     let qoutelink = document.getElementById('qoutelink')
-    author.textContent = qouteBody.quoteAuthor;
+    if(qouteBody.quoteAuthor)
+    author.textContent = qouteBody.quoteAuthor ;
+    else
+    author.textContent = 'UnKnown';
     qoute.textContent = qouteBody.quoteText;
     qoutelink.href = qouteBody.quoteLink;
     genaratRandomBGColor();
