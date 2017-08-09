@@ -77,15 +77,15 @@
     let author = document.getElementById('auth')
     let qoute = document.getElementById('qoute')
     let qoutelink = document.getElementById('qoutelink')
-    if (qouteBody.quoteAuthor)
-      author.textContent = qouteBody.quoteAuthor;
-    else
-      author.textContent = 'UnKnown';
+    // if (qouteBody.quoteAuthor)
+    author.textContent = qouteBody.quoteAuthor != '' ? qouteBody.quoteAuthor : 'UnKnown';
+    // else
+    //   author.textContent = 'UnKnown';
     qoute.textContent = qouteBody.quoteText;
     qoutelink.href = qouteBody.quoteLink;
-      var photo = document.getElementById('photo');
-      photo.setAttribute('src', 'https://api.adorable.io/avatar/128/' + qouteBody.quoteAuthor);
-      photo.setAttribute("class", "photo");
+    var photo = document.getElementById('photo');
+    photo.setAttribute('src', 'https://api.adorable.io/avatar/128/' + qouteBody.quoteAuthor);
+    photo.setAttribute("class", "photo");
 
     genaratRandomBGColor();
   }
