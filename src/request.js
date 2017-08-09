@@ -43,31 +43,6 @@ const getAudio = (qout, cb) => {
   })
 }
 
-const generateAvatar = (size, query, cb) => {
-  var replacedquery = encodeURIComponent(query.trim())
-  var url = `https://api.adorable.io/avatars/${size}/${replacedquery}.png`;
-  _request(url, (err, res, body) => {
-    if (err)
-      cb(err)
-    else {
-      cb(null, res, body)
-    }
-  })
-}
-
-// getQoute((err ,res ,data)=>{
-//     console.log(data);
-// });
-// var q = 'new test'
-// getAudio(q ,(err, res , data)=>{
-//   // console.log(data);
-//   console.log(data);
-//
-// });
-// generateAvatar(164,'qamar f',(err, res, data)=>{
-//   console.log(res);
-// })
-
 module.exports = {
   getQoute: getQoute,
   getAudio: getAudio

@@ -99,19 +99,6 @@
     genaratRandomBGColor();
   }
 
-  // function getQoute(pringData) {
-  //   //sample
-  //   var data = {
-  //     quoteText: "Fame usually comes to those who are thinking about something else. ",
-  //     quoteAuthor: "Holmes",
-  //     senderName: "",
-  //     senderLink: "",
-  //     quoteLink: "http://forismatic.com/en/ef7413d4dc/"
-  //   };
-  //   //fetch actual from the requests
-  //   //request(url , (err ,data)=> pringData(err ,data))
-  //   pringData(null, data);
-  // }
   //request function
   //genarat Random Color for body background
   function genaratRandomBGColor() {
