@@ -51,10 +51,10 @@ Our website can give you a best qoute, and funny photo for the author
 
 
 ### System Structure
-![pic](https://github.com/FACG2/week-5-ad-hoc/blob/master/public/img/structure.png?raw=true)
+![pic](https://raw.githubusercontent.com/FACG2/week-5-ad-hoc/last-varsion/public/img/structure.png)
 
 ### Sequence Diagram
-![pic2](https://github.com/FACG2/week-5-ad-hoc/blob/master/public/img/sequance.png?raw=true)
+![pic2](https://raw.githubusercontent.com/FACG2/week-5-ad-hoc/last-varsion/public/img/sequance.png)
 
 ### Heroku
 
