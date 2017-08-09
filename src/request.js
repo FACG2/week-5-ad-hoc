@@ -31,9 +31,8 @@ const _request = (url, cb) => {
 }
 
 const getAudio = (qout, cb) => {
-  var reblacedQoute = encodeURIComponent(qout.trim())
+  var reblacedQoute =qout.trim();
   var url = `http://api.voicerss.org/?key=a745846b75b144ef91c60d4de16d0f0d&hl=en-us&src=${reblacedQoute}&c=MP3&b64=true`;
-  console.log(url);
   _request(url, (err, res, body) => {
     if (err)
       cb(err)

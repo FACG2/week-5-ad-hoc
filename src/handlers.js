@@ -4,7 +4,6 @@ const path=require('path')
 
 const home=(req ,res)=>{
   const ext =  req.url.split('.')[1];
-  console.log(path.join(__dirname, '..', 'public', 'index.html') );
   fs.readFile(path.join(__dirname, '..', 'public', 'index.html') , (error, data) => {
     if(error){
       res.writeHead(404, {'content-type' : 'text/html'});
@@ -16,7 +15,7 @@ const home=(req ,res)=>{
   });
 }
 const Public=(req ,res)=>{
-  
+
   let ext =  req.url.split('.')[1];
   // let file= req.url.substring(1,req.url.length);
   fs.readFile(path.join(__dirname, '..', req.url) , (error, data) => {
@@ -31,7 +30,6 @@ const Public=(req ,res)=>{
 }
 const getQoute=(req ,res)=>{
   request.getQoute((err , response , body )=>{
-    console.log('inside getQoute');
     if(err){
       res.writeHead(404, {'content-type' : 'text/html'});
       res.end('Page Not Found')

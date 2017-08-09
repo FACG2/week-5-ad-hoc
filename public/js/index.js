@@ -36,21 +36,13 @@
     //make request for audio for the text
     //play the sound
     event.preventDefault();
-    let text = document.getElementById('qoute').value;
+    let text = document.getElementById('qoute').textContent;
     getAudio(text, (err, data) => {
       if (err)
         alertUser(err, 'audio btn')
       else {
-        // let mp3Link = data.link;
-
-        console.log(data);
-        // var bin = atob(data);
         let audio = new Audio(data);
-        // audio =bin;
         audio.play();
-        // let audio = new Audio(data.mp3Url);
-        // audio.play();
-
       }
     })
   })
@@ -67,7 +59,6 @@
       } else {
         //dom the data
         var text = document.getElementById('qoute').textContent;
-        console.log(text);
         let tlink = `https://twitter.com/home/?status=${encodeURIComponent(text)}`
         window.open(tlink);
       }
@@ -93,7 +84,7 @@
     qoute.textContent = qouteBody.quoteText;
     qoutelink.href = qouteBody.quoteLink;
       var photo = document.getElementById('photo');
-      photo.setAttribute('src', 'http://api.adorable.io/avatar/128/' + qouteBody.quoteAuthor);
+      photo.setAttribute('src', 'https://api.adorable.io/avatar/128/' + qouteBody.quoteAuthor);
       photo.setAttribute("class", "photo");
 
     genaratRandomBGColor();
