@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>ad hoc</title>
-  </head>
-  <body>
-    <h1>AD HOC</h1>
+<html lang="en">
 
-    <script src="./js/index.js" ></script> 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>AdHoc</title>
+  <link rel="icon" type="image/png" href="./img/adhoc.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='./css/style.css' rel='stylesheet' type='text/css'>
+
+  <link href='https://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+  <div class="main">
+
+    <img alt="light bulb" height="576" src="http://i57.tinypic.com/107kgfs.png" width="110" class="lightbulb">
+
+    <!--If the API isn't working this quote by Winston Churchill will be displayed.  -->
+    <h1 id="quote">&ldquo;We shall defend our island, whatever the cost may be, we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender.&rdquo;</h1>
+
+    <h1 id="author"></h1>
+    <div class="autherDetails">
+      Auther:<span id="auth"></span>
+    </div>
+    <div class="qouteTExt">
+      <p id="qoute"></p>
+      <a id="qoutelink">Link</a>
+    </div>
+    <div class="btn">
+    <button id="refresh" name="refresh">get a quote</button>
+    <button id="playAudi" name="ReadText">get a quote</button>
+    <button id="tweet" name="tweet">get a quote</button>
+    </div>
+  </div>
+  <script type="text/javascript" src="./js/request.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+</body>
 
 </html>
