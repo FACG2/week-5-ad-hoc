@@ -34,12 +34,13 @@
   document.getElementById('playAudio').addEventListener('click', (event) => {
     //make request for audio for the text
     //play the sound
+    let text=' d';
     getAudio(text, (err, data) => {
       if (err)
         alertUser(err, 'audio btn')
       else {
         let mp3Link = data.link;
-        let audio = new Audio(mp3);
+        let audio = new Audio(data.mp3Url);
         audio.play();
       }
     })
