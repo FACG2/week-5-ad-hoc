@@ -3,6 +3,7 @@ const handlers=require('./handlers')
 
 
 const router=(req ,res)=>{
+  console.log(req.url);
   let url= req.url;
   const handle={
     '/':handlers.home,
