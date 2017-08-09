@@ -15,7 +15,6 @@
   });
 
 
-
   //when button refresh clicked make request for new qoute
   document.getElementById('refresh').addEventListener('click', (event) => {
     event.preventDefault();
@@ -93,6 +92,10 @@
       author.textContent = 'UnKnown';
     qoute.textContent = qouteBody.quoteText;
     qoutelink.href = qouteBody.quoteLink;
+      var photo = document.getElementById('photo');
+      photo.setAttribute('src', 'http://api.adorable.io/avatar/128/' + qouteBody.quoteAuthor);
+      photo.setAttribute("class", "photo");
+
     genaratRandomBGColor();
   }
 
