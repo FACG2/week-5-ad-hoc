@@ -7,13 +7,13 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node test/router.test.js | tap-spec",
-    "start": "node src/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FACG2/week-5-ad-hoc.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -21,8 +21,12 @@
   },
   "homepage": "https://github.com/FACG2/week-5-ad-hoc#readme",
   "devDependencies": {
+    "atob": "^2.0.3",
     "shot": "^3.4.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.8.0"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
   }
 }
