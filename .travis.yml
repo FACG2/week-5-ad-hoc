@@ -1,4 +1,4 @@
 language: node_js
 node_js:
   - 'stable'
-  script: node test/*.test.js
+  script: node test/router.test.js
