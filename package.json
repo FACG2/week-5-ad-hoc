@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node 'src/server.js'",
+    "test": "node test/* | tap-spec",
+    "coverage": "node ./node_modules/.bin/istanbul cover test/*"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   "homepage": "https://github.com/FACG2/week-5-ad-hoc#readme",
   "devDependencies": {
     "atob": "^2.0.3",
+    "istanbul": "^0.4.5",
     "shot": "^3.4.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.8.0"

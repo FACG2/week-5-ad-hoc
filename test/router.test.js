@@ -18,10 +18,3 @@ shot.inject(router, { method:'get' , url: '/qqqqq'}, (res) => {
   t.end();
 })
 })
-
-// test('Test home Route', (test) => {
-//   shot.inject (router, { method:'get', url: '/'}, (res) => {
-//     test.equal()
-//     test.end()
-//   })
-// })
