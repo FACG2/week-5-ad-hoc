@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "ad-hoc week 5 project",
   "main": "src/server.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "start": "node 'src/server.js'",
     "test": "node test/* | tap-spec",
