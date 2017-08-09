@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "week-5-ad-hoc-",
-=======
   "name": "week-5-ad-hoc",
->>>>>>> serverWork
   "version": "1.0.0",
   "description": "ad-hoc week 5 project",
   "main": "index.js",
@@ -11,36 +7,16 @@
     "test": "test"
   },
   "scripts": {
-<<<<<<< HEAD
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FACG2/week-5-ad-hoc-.git"
-=======
     "test": "node test/router.test.js | tap-spec",
     "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FACG2/week-5-ad-hoc.git"
->>>>>>> serverWork
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-<<<<<<< HEAD
-    "url": "https://github.com/FACG2/week-5-ad-hoc-/issues"
-  },
-  "homepage": "https://github.com/FACG2/week-5-ad-hoc-#readme",
-  "devDependencies": {
-    "request": "^2.81.0",
-    "shot": "^3.4.2",
-    "tape": "^4.8.0"
-  },
-  "dependencies": {
-    "atob": "^2.0.3"
-=======
     "url": "https://github.com/FACG2/week-5-ad-hoc/issues"
   },
   "homepage": "https://github.com/FACG2/week-5-ad-hoc#readme",
@@ -48,6 +24,5 @@
     "shot": "^3.4.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.8.0"
->>>>>>> serverWork
   }
 }

@@ -16,6 +16,7 @@ const home=(req ,res)=>{
   });
 }
 const Public=(req ,res)=>{
+  
   let ext =  req.url.split('.')[1];
   // let file= req.url.substring(1,req.url.length);
   fs.readFile(path.join(__dirname, '..', req.url) , (error, data) => {
@@ -23,7 +24,7 @@ const Public=(req ,res)=>{
       res.writeHead(404, {'content-type' : 'text/plain'});
       res.end('Page Not Found')
     }else {
-      res.writeHead(200, {'content-type': 'text' + ext});
+      res.writeHead(200, {'content-type': 'text/' + ext});
       res.end(data);
     }
   });

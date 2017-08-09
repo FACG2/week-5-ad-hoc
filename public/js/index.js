@@ -2,6 +2,7 @@
   //when page loads make request for aqoute
   window.addEventListener("load", (event) => {
     //make request for new qoute
+    event.preventDefault();
     getQoute((err, qouteBody) => {
       if (err) {
         //handle the error - Print it to the user
@@ -17,6 +18,7 @@
 
   //when button refresh clicked make request for new qoute
   document.getElementById('refresh').addEventListener('click', (event) => {
+    event.preventDefault();
     //make request for new qoute
     //dom the data
     getQoute((err, qouteBody) => {
@@ -34,7 +36,8 @@
   document.getElementById('playAudio').addEventListener('click', (event) => {
     //make request for audio for the text
     //play the sound
-    let text=document.getElementById('qoute').value;
+    event.preventDefault();
+    let text = document.getElementById('qoute').value;
     getAudio(text, (err, data) => {
       if (err)
         alertUser(err, 'audio btn')
@@ -43,7 +46,7 @@
 
         console.log(data);
         // var bin = atob(data);
-        let audio=new Audio(data);
+        let audio = new Audio(data);
         // audio =bin;
         audio.play();
         // let audio = new Audio(data.mp3Url);
@@ -55,14 +58,18 @@
 
   //make atweet
   document.getElementById('tweet').addEventListener('click', (event) => {
+    event.preventDefault();
     //make atweet
+
     getQoute((err, qouteBody) => {
       if (err) {
         //handle the error - Print it to the user
         alertUser(err, 'tweet btn');
       } else {
         //dom the data
-        let tlink = `https://twitter.com/home/?status=${encodeURIComponent(qouteBody.quoteText)}`
+        var text = document.getElementById('qoute').textContent;
+        console.log(text);
+        let tlink = `https://twitter.com/home/?status=${encodeURIComponent(text)}`
         window.open(tlink);
       }
     })
@@ -80,10 +87,10 @@
     let author = document.getElementById('auth')
     let qoute = document.getElementById('qoute')
     let qoutelink = document.getElementById('qoutelink')
-    if(qouteBody.quoteAuthor)
-    author.textContent = qouteBody.quoteAuthor ;
+    if (qouteBody.quoteAuthor)
+      author.textContent = qouteBody.quoteAuthor;
     else
-    author.textContent = 'UnKnown';
+      author.textContent = 'UnKnown';
     qoute.textContent = qouteBody.quoteText;
     qoutelink.href = qouteBody.quoteLink;
     genaratRandomBGColor();
@@ -116,12 +123,9 @@
       0: '#7B1FA2', //red
       1: '#9C27B0', //pink
       2: '#C51162', //purple
-
       4: '#EC407A', // indigo
       5: '#0097A7', // blue
-
       11: '#1A237E', // light-green
-
     };
     return colors[randomNum];
   }
