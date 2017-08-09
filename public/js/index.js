@@ -111,29 +111,17 @@
   }
   //pik color randomly from 20 item length array
   function randomColor() {
-    var randomNum = Math.floor(Math.random() * 20);
+    var randomNum = Math.floor(Math.random() * 6);
     var colors = {
-      0: '#f44336', //red
-      1: '#e91e63', //pink
-      2: '#9c27b0', //purple
-      3: '#d500f9', //purple accent-3
-      4: '#3f51b5', // indigo
-      5: '#2196f3', // blue
-      6: '#00bcd4', // cyan
-      7: '#03a9f4', // light-blue
-      8: '#eeff41', // lime accent-2
-      9: '#b2ff59', // light-green accent-2
-      10: '#43a047', // green darken-1
-      11: '#8bc34a', // light-green
-      12: '#00e676', // green accent-3
-      13: '#ffca28', // amber lighten-1
-      14: '#90a4ae', // blue-grey lighten-2
-      15: '#9e9e9e', // grey
-      16: '#ff9100', // orange accent-3
-      17: '#e040fb', // purple accent-2
-      18: '#ff4081', // pink accent-2
-      19: '#e3f2fd', // blue lighten-5
-      20: '#e1bee7', // purple lighten-4
+      0: '#7B1FA2', //red
+      1: '#9C27B0', //pink
+      2: '#C51162', //purple
+
+      4: '#EC407A', // indigo
+      5: '#0097A7', // blue
+
+      11: '#1A237E', // light-green
+
     };
     return colors[randomNum];
   }
