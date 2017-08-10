@@ -1,33 +1,34 @@
 {
-  "name": "week-5-ad-hoc",
-  "version": "1.0.0",
-  "description": "ad-hoc week 5 project",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "node test/router.test.js | tap-spec",
-    "start": "node src/server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FACG2/week-5-ad-hoc.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/FACG2/week-5-ad-hoc/issues"
-  },
-  "homepage": "https://github.com/FACG2/week-5-ad-hoc#readme",
-  "devDependencies": {
-    "istanbul": "^0.4.5",
-    "shot": "^3.4.2",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.8.0"
-  },
-  "dependencies": {
-    "atob": "^2.0.3",
-    "request": "^2.81.0"
-  }
+    "name": "week-5-ad-hoc",
+    "version": "1.0.0",
+    "description": "ad-hoc week 5 project",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "node test/router.test.js | tap-spec",
+        "start": "node src/server.js",
+        "coverage": "node ./node_modules/.bin/istanbul cover test/*.test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/FACG2/week-5-ad-hoc.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/FACG2/week-5-ad-hoc/issues"
+    },
+    "homepage": "https://github.com/FACG2/week-5-ad-hoc#readme",
+    "devDependencies": {
+        "istanbul": "^0.4.5",
+        "shot": "^3.4.2",
+        "tap-spec": "^4.1.1",
+        "tape": "^4.8.0"
+    },
+    "dependencies": {
+        "atob": "^2.0.3",
+        "request": "^2.81.0"
+    }
 }
