@@ -1,5 +1,9 @@
+
+[![Build Status](https://travis-ci.org/FACG2/world-weather-week5.svg?branch=master)](https://travis-ci.org/FACG2/world-weather-week5)
+
 # week-5-ad-hoc
 Our website can give you a best qoute, and funny photo for the author
+
 
 ### User story
 > As a user
@@ -8,6 +12,7 @@ Our website can give you a best qoute, and funny photo for the author
 - When I click on "Tweet" Button I can share the Qoute on tweeter.
 
 
+##  link to Heroku [visit](https://ad-hocc.herokuapp.com)
 
 ### Specification
 
@@ -90,7 +95,7 @@ Things to remember for next time!
  - Navigate to http://localhost:4000/ in your browser
 
 
-##  link to Heroku [visit](https://ad-hocc.herokuapp.com)
+
 
 ### Team:
 
