@@ -24,6 +24,7 @@ test('Home route returns a status code of 404', (t) => {
     t.end();
   })
 });
+});
 
 test('Public route', (t) => {
   shot.inject(router, {
